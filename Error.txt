@@ -1,0 +1,14 @@
+Exception filling window for RimWorld.MainTabWindow_Quests: System.InvalidOperationException: Sequence contains no elements
+  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at RimWorld.QuestPart_SubquestGenerator_RelicHunt.GetNextSubquestDef () [0x00006] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.QuestPart_SubquestGenerator.GenerateSubquest () [0x00000] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.QuestPart_SubquestGenerator.DoDebugWindowContents (UnityEngine.Rect innerRect, System.Single& curY) [0x00050] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.QuestPart_SubquestGenerator_RelicHunt.DoDebugWindowContents (UnityEngine.Rect innerRect, System.Single& curY) [0x00000] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.MainTabWindow_Quests.DoDebugInfo (UnityEngine.Rect innerRect, System.Single& curY) [0x0003a] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.MainTabWindow_Quests.DoSelectedQuestInfo (UnityEngine.Rect rect) [0x0019b] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.MainTabWindow_Quests.DoWindowContents (UnityEngine.Rect rect) [0x0007c] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <cd7169108ea74757aa50c5b33d275c15>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
